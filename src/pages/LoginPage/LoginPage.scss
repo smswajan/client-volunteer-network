@@ -1,0 +1,18 @@
+.custom-auth-btn {
+    border-radius: 30px;
+    position: relative;
+    border: 1px solid gray;
+}
+.custom-auth-btn img {
+    height: 36px;
+    position: absolute;
+    top: 10px;
+    left: 012px;
+}
+.custom-auth-btn:hover {
+    background-color: #c9c9c9;
+}
+.login-container {
+    border: 1px solid rgba(53, 52, 52, 0.596);
+    border-radius: 5px;
+}

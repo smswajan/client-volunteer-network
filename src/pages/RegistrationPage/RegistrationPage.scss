@@ -1,0 +1,15 @@
+.auth-form input {
+    margin-bottom: 26px;
+}
+.auth-form input.form-control {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid gray;
+    color: black;
+    border-radius: 0;
+}
+.auth-form {
+    border: 1px solid gray;
+    border-radius: 4px;
+}
