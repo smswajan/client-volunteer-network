@@ -14,7 +14,7 @@ const HomePage = () => {
     const [value, setValue] = useState([]);
     const [loading, setLoading] = useState(true);
     useEffect(() => {
-        fetch("http://localhost:4000/events")
+        fetch("https://volunteer-network-online.herokuapp.com/events")
             .then((res) => res.json())
             .then((data) => {
                 setValue(data);

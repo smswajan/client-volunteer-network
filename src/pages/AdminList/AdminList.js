@@ -9,7 +9,7 @@ import ListItem from "./ListItem";
 const AdminList = () => {
     const [allEvents, setAllEvents] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:4000/registrations")
+        fetch("https://volunteer-network-online.herokuapp.com/registrations")
             .then((res) => res.json())
             .then((data) => {
                 setAllEvents(data);
@@ -20,7 +20,7 @@ const AdminList = () => {
         window.location.reload();
     };
     const deleteRegistration = (id) => {
-        fetch(`http://localhost:4000/delete/${id}`, {
+        fetch(`https://volunteer-network-online.herokuapp.com/delete/${id}`, {
             method: "DELETE",
         })
             .then((res) => {

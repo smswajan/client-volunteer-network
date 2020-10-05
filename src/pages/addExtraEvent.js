@@ -6,7 +6,7 @@ const AddExtraEvent = () => {
     const { register, handleSubmit, watch, errors } = useForm();
     const onSubmit = (data, e) => {
         data.key = Number(data.key);
-        fetch("http://localhost:4000/addevent", {
+        fetch("https://volunteer-network-online.herokuapp.com/addevent", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(data),

@@ -4,7 +4,7 @@ import "./EventCard.scss";
 
 const EventCard = ({ eventDetails, deleteReg }) => {
     const deleteRegistration = (id) => {
-        fetch("http://localhost:4000/delete/" + id, {
+        fetch("https://volunteer-network-online.herokuapp.com/delete/" + id, {
             method: "DELETE",
         }).then((res) =>
             res.json().then((result) => console.log("Deleted successfully"))

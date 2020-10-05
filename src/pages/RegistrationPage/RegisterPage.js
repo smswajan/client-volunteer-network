@@ -15,7 +15,7 @@ const RegisterPage = () => {
     console.log(eventId);
     const [eventText, setEventText] = useState(null);
     useEffect(() => {
-        fetch("http://localhost:4000/events")
+        fetch("https://volunteer-network-online.herokuapp.com/events")
             .then((res) => res.json())
             .then((result) => {
                 const selectedEvent = result.find(({ key }) => key == eventId);
@@ -25,7 +25,7 @@ const RegisterPage = () => {
     const { register, handleSubmit, watch, errors } = useForm();
     const onSubmit = (data, e) => {
         console.log(data);
-        fetch("http://localhost:4000/register", {
+        fetch("https://volunteer-network-online.herokuapp.com/register", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(data),

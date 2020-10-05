@@ -12,7 +12,10 @@ const MyEventsPage = () => {
     const [myEvents, setMyEvents] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:4000/myevents?email=" + email)
+        fetch(
+            "https://volunteer-network-online.herokuapp.com/myevents?email=" +
+                email
+        )
             .then((res) => res.json())
             .then((data) => setMyEvents(data));
     }, []);
@@ -21,7 +24,7 @@ const MyEventsPage = () => {
     };
 
     const deleteRegistration = (id) => {
-        fetch(`http://localhost:4000/delete/${id}`, {
+        fetch(`https://volunteer-network-online.herokuapp.com/delete/${id}`, {
             method: "DELETE",
         })
             .then((res) => {
