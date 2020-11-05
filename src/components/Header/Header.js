@@ -60,10 +60,10 @@ const Header = () => {
                                 </button>
                             </Nav.Link>
                         ) : (
-                            <Nav.Link href="/">
-                                <span className="btn btn-primary">Login</span>
-                            </Nav.Link>
-                        )}
+                                <Nav.Link href="/">
+                                    <span className="btn btn-primary">Login</span>
+                                </Nav.Link>
+                            )}
                     </Nav>
                 </Container>
             </Navbar>

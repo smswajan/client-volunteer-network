@@ -69,4 +69,4 @@ const LoginPage = () => {
     );
 };
 
-export default LoginPage;
+export default withRouter(LoginPage);
